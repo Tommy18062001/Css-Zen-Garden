@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Nunito+Sans:wght@300&display=swap");
+h1, h2, h3, h4 {
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  color: #333;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+a:hover {
+  border-color: #90E0EF;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: block;
+  background: #90E0EF;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+  margin: 25px auto;
+}
+
+main {
+  width: 80%;
+  margin: 25px auto;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+h2.theme {
+  font-size: 1.5em;
+}
+
+section.fonts,
+section.colors,
+section.elements {
+  margin-top: 50px;
+}
+
+section.fonts p {
+  background: #DDE6E8;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+section.colors div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+section.colors figure {
+  width: 25%;
+  margin: 0;
+}
+
+section.colors .primary {
+  background: #fff;
+  padding: 10px;
+  border-radius: 0;
+}
+
+section.colors .accent1 {
+  background: #90E0EF;
+  padding: 10px;
+  border-radius: 0;
+}
+
+section.colors .accent2 {
+  background: #DDE6E8;
+  padding: 10px;
+  border-radius: 0;
+}
+
+section.colors .accent3 {
+  background: #CAF0F8;
+  padding: 10px;
+  border-radius: 0;
+}
+
+.elements h4 {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.elements h1, .elements h2, .elements div h3, .elements p {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.elements p.uppercase {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.elements a.link {
+  background: #90E0EF;
+  padding: 10px;
+  border: none;
+}
+
+/*# sourceMappingURL=style-pattern.css.map */

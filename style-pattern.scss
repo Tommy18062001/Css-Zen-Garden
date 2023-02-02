@@ -1,0 +1,103 @@
+@use "variables" as *;
+@use "atoms";
+
+@mixin content-in-box($backgroundColor, $radius: 0) {
+  background: $backgroundColor;
+  padding: 10px;
+  border-radius: $radius;
+}
+
+@mixin set-flex($direction) {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+body {
+  font-family: $fonts-body;
+  color: $text-dark;
+  background-color: $primary;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: block;
+  background: $accent1;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+  margin: 25px auto;
+}
+
+main {
+  width: 80%;
+  margin: 25px auto;
+}
+
+header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+h2.theme {
+  font-size: 1.5em;
+}
+
+section.fonts,
+section.colors,
+section.elements {
+  margin-top: 50px;
+}
+
+section.fonts p {
+  @include content-in-box($accent2, 5px);
+  // box-shadow: 0 2px 5px 0 rgb(0 0 0 / 23%);
+}
+
+section.colors div {
+  @include set-flex(row);
+  border: 1px solid rgba(0,0,0, 25%);
+}
+
+section.colors figure {
+    width: 25%;
+    margin: 0;
+}
+
+section.colors .primary {
+  @include content-in-box($primary);
+}
+section.colors .accent1 {
+  @include content-in-box($accent1);
+}
+section.colors .accent2 {
+  @include content-in-box($accent2);
+}
+section.colors .accent3 {
+  @include content-in-box($accent3);
+}
+
+.elements h4 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.elements h1, .elements h2, .elements div h3, .elements p {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0, 25%);
+}
+
+.elements p.uppercase {
+    @include atoms.uppercase($text-dark);
+}
+
+.elements a.link {
+    background: $accent1;
+    padding: 10px;
+    border: none;
+}
